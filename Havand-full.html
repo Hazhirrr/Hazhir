@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Havand's Accounts">
+  <title>Havand's Accounts </title>
+  
+  <script src="https://kit.fontawesome.com/29f4efda47.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  place-items: center;
+  /*background: linear-gradient(315deg, #928787, #344251);*/
+  background-color: black; 
+}
+
+
+.tooltip{
+  margin-left: -40px;
+}
+
+.wrapper {
+  display: flex;
+  list-style: none;
+  padding-bottom: 200px;
+  padding-right: 30px;
+  flex-wrap: wrap;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877F2;
+  color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: black;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: yellow;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: blue;
+  color: #ffffff;
+}
+
+
+h1 {
+  color: rgb(251, 251, 186);
+  text-decoration: none;
+  margin-top: 300px;
+  filter: drop-shadow(0 0 5px rgb(245, 222, 222));
+}
+
+
+
+
+h1:hover , h1:focus{
+  text-decoration: underline;
+
+  
+}
+/*
+h1:hover , h1:focus{
+
+  transform: scale(1.5);
+  transition: all 0.3s ease-in-out;
+
+}
+*/
+.icon {
+  margin-left: 10px;
+  margin-bottom: 10px;
+ }
+
+
+@media screen and (min-width:550px) {
+   
+    h1 {
+      margin-right: 50px;
+    }
+
+    
+.wrapper {
+  display: flex;
+  list-style: none;
+  padding-bottom: none; 
+  flex-wrap: wrap;
+  margin-right: 50px;
+  margin-bottom: 300px;
+}
+
+}
+
+
+
+
+
+
+/*iphone se*/
+@media  screen and (min-width:375px) {
+  
+
+  h1 {
+    font-size: 25px;
+  }
+}
+
+.wrapper {
+  padding-bottom: 200px;
+  padding-right: ;
+}
+
+
+@media  screen and (min-width:274px) {
+
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .wrapper {
+    padding-bottom: 200px;
+    padding-right: 100px;
+    
+  }
+  
+}
+
+
+@media  screen and (min-width:393px)  {
+  
+  .wrapper {
+    padding-bottom: 200px;
+    padding-right: 10px;
+    
+  }
+  
+}
+
+
+
+@media  screen and (min-width:320px) {
+  .wrapper {
+    padding-bottom: 200px;
+    padding-right: 1px;
+    
+  }
+  
+}
+
+
+
+@media  screen and (min-width:280px) {
+  .wrapper {
+    padding-bottom: 200px;
+    padding-right: 0.5px;
+    
+  }
+  
+}
+
+
+
+@media  screen and (min-width:390px)  {
+  h1 {
+    font-size: 30px;
+  }
+}
+</style>
+<body>
+  
+  <h1>HAVAND'S ACCOUNTS 🚀 </h1>
+  <ul class="wrapper">
+    <li class="icon facebook"><a href="https://www.facebook.com/havand.lawand">
+      <span class="tooltip">Facebook</span>
+      <span><i class="fab fa-facebook-f"></i></span>
+    </a></li>
+    <li class="icon twitter"><a href="https://www.tiktok.com/@aghababani?_t=8gJK1AzYZNd&_r=1">
+      <span class="tooltip">Tiktok</span>
+      <span><i class="fa-brands fa-tiktok"></i></span></a>
+    </li>
+    <li class="icon instagram"><a href="https://www.instagram.com/invites/contact/?i=rtm0aagjn22j&utm_content=gnpudvf">
+      <span class="tooltip">Instagram</span>
+      <span><i class="fab fa-instagram"></i></span>
+    </a></li>
+    <li class="icon github"><a href="https://t.snapchat.com/2kgoEceL">
+      <span class="tooltip">snapchat</span>
+      <span><i class="fa-brands fa-snapchat"></i></span>
+    </a></li>
+    <li class="icon youtube"><a href="https://telegram.org/dl">
+      <span class="tooltip">Telegram</span>
+      <span><i class="fa-brands fa-telegram"></i></span>
+   </a> </li>
+  </ul>
+
+  <script src="havand.js"></script>
+  
+
+
+</body>
+</html>
